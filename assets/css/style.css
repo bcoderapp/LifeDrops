@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #c92525; 
+    --secondary-color: #333333;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+/* Section Header Styling */
+.section_header {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.section_header i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+/* Navigation Bar Area Stiling */
+.nav_area{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(180deg, #951414, var(--primary-color));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav_area nav{
+    background: linear-gradient(180deg, #951414, var(--primary-color)) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--primary-color); 
+    border: 1px solid var(--primary-color);
+}
+
+
+/* HERO SECTION Styling */
+.hero_section {
+    height: 70vh;
+    background-color: var(--primary-color);
+    padding: 120px 0;
+    position: relative;
+    color: white;
+}
+
+.hero_title {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+.hero_buttons .btn {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    margin-right: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.hero_buttons .btn:hover {
+    background: #f3f3f3;
+}
+
+.hero_explore {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* DONOR FORM */
+.donor_form_container {
+    background: white;
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.form_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form_control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 0;
+}
+
+.form_group {
+    display: flex;
+    gap: 10px;
+}
+
+.form_control::placeholder {
+    color: var(--primary-color);
+}
+
+.donor_button {
+    background: gray;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.donor_button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+
+
+/* Footer Styling */
+.footer_body {
+    background: linear-gradient(180deg, #d63434, var(--primary-color));
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer_body .footer_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer_body .footer_tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.footer_body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(-45deg);
+    opacity: 0.8;
+}
+
