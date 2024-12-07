@@ -41,6 +41,7 @@ form label{
     box-shadow: none !important;
 }
 /* All Sections */
+#search_result
 #search-section,
 #register-section,
 #info-section,
@@ -130,4 +131,14 @@ header p{
         max-width: 50%;
         margin: auto;
     }
+}
+
+
+#search_result .search_body  h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search_body {
+    padding-top: 60px !important;
 }

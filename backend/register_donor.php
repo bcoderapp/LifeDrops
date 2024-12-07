@@ -93,10 +93,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </style>
 </head>
 <body>
-    <form method="POST" action="">
-        <!-- Your form inputs -->
-    </form>
-
     <!-- Modal structure -->
     <div id="modal">
         <div id="modal-content">
