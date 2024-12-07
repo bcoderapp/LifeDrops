@@ -6,51 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LifeDrops - Blood Donation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">LifeDrops</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#search-section">Search Donor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#register-section">Register Donor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#info-section">Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#articles-section">Articles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#developers-section">Meet Developers</a>
-          </li>
-        </ul>
-      </div>
+  <section class="nav_section">
+    <div class="nav_body container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LifeDrops</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#search-section">Search Donor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#register-section">Register Donor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info-section">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#articles-section">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#developers-section">Meet Developers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </section>
 
   <!-- Hero Section -->
-  <header class="text-center bg-light py-5">
-    <h1 class="display-4 text-danger fw-bold">LifeDrops</h1>
-    <p class="lead">Your blood can save lives. Join the cause today!</p>
+  <header class="text-center header-bg py-5 vh-65 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-4 mt-3 text-danger fw-bold">LifeDrops</h1>
+    <p class="lead mb-4">Your blood can save lives. Join the cause today!</p>
     <div class="d-flex justify-content-center gap-3">
-      <a href="#register-section" class="btn btn-danger btn-lg">Register Donor</a>
-      <a href="#search-section" class="btn btn-outline-danger btn-lg">Search Donor</a>
+        <a href="#register-section" class="btn btn-danger btn-lg">Register Donor</a>
+        <a href="#search-section" class="btn btn-outline-danger btn-lg">Search Donor</a>
     </div>
   </header>
 
   <!-- Search Section -->
   <section id="search-section" class="py-5">
-    <div class="container">
+    <div class="container search_body">
       <h2 class="text-danger mb-4 text-center">Search Donor</h2>
       <form action="backend/search_donor.php" method="POST">
         <div class="mb-3">
@@ -137,14 +142,14 @@
             <option value="Thakurgaon">Thakurgaon</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-danger w-100">Search</button>
+        <button type="submit" class="btn btn-danger w-100 mt-3">Search</button>
       </form>
     </div>
   </section>
 
   <!-- Register Section -->
-  <section id="register-section" class="py-5 bg-light">
-    <div class="container">
+  <section id="register-section" class="py-5 my_bg">
+    <div class="container register_body">
       <h2 class="text-danger mb-4 text-center">Register as a Donor</h2>
       <form action="backend/register_donor.php" method="POST">
         <div class="mb-3">
@@ -166,9 +171,9 @@
           </select>
         </div>
         <div class="mb-3">
-          <label for="areaRegister" class="form-label">Area</label>
+          <label for="areaRegister" class="form-label">Your Living Location</label>
           <select class="form-select" id="areaRegister" name="area" required>
-            <option value="" selected>Select Area</option>
+            <option value="" selected>Select Location</option>
             <option value="Dhaka">Dhaka</option>
             <option value="Bagerhat">Bagerhat</option>
             <option value="Bandarban">Bandarban</option>
@@ -242,60 +247,73 @@
           <label for="altContactNo" class="form-label">Alternative Contact No</label>
           <input type="text" class="form-control" id="altContactNo" name="alt_contact_no" placeholder="Enter Alternative Contact">
         </div>
-        <button type="submit" class="btn btn-danger w-100">Register</button>
+        <button type="submit" class="btn btn-danger w-100 mt-3">Register</button>
       </form>
     </div>
   </section>
   
-
-  <!-- Information Section -->
-  <section id="info-section" class="py-5">
-    <div class="container">
-      <h2 class="text-danger mb-4 text-center">Why Donate Blood?</h2>
-      <p>Blood donation is a simple act of humanity that can save lives. Here’s why you should consider donating blood:</p>
-      <ul>
-        <li>Every two seconds, someone in need of a transfusion requires blood.</li>
-        <li>Your donation can help accident victims, cancer patients, and more.</li>
-        <li>It's a quick and painless process that makes a huge difference.</li>
-      </ul>
-      <h4 class="mt-4">FAQs</h4>
-      <p><strong>Q: How often can I donate blood?</strong> A: You can donate whole blood every 56 days.</p>
-      <p><strong>Q: Is it safe to donate blood?</strong> A: Yes, the process is completely safe and conducted under medical supervision.</p>
+<!-- Information Section -->
+<section id="info-section" class="py-5">
+  <div class="container">
+    <h2 class="text-danger mb-4 text-center">Why Donate Blood?</h2>
+    <p>
+      Donating blood is one of the simplest and most impactful ways to save lives. Blood is always in high demand, and your contribution can make a huge difference in emergencies and for patients with critical conditions.
+    </p>
+    <p>Here are some key reasons to donate blood:</p>
+    <ul>
+      <li><strong>High Demand:</strong> Every two seconds, someone in need requires a blood transfusion.</li>
+      <li><strong>Saves Lives:</strong> Your donation can help accident victims, surgery patients, and those battling serious illnesses like cancer.</li>
+      <li><strong>Health Benefits:</strong> Regular blood donation can improve heart health by reducing iron levels in your body.</li>
+      <li><strong>Quick and Easy:</strong> The process takes only about an hour, including registration and recovery time.</li>
+    </ul>
+    <h4 class="mt-4">FAQs</h4>
+    <div>
+      <p><strong>Q: How often can I donate blood?</strong></p>
+      <p>A: You can donate whole blood every 56 days. Platelet donation can be done more frequently, up to every 7 days.</p>
+      
+      <p><strong>Q: Is it safe to donate blood?</strong></p>
+      <p>A: Absolutely. Sterile, single-use equipment ensures that the process is safe, and trained professionals supervise every step.</p>
+      
+      <p><strong>Q: What should I do before and after donating?</strong></p>
+      <p>A: Drink plenty of water and eat a healthy meal before donating. After donating, rest for a while, stay hydrated, and avoid heavy physical activities for a few hours.</p>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- Blood Donation Related Articles Section -->
-<section id="articles-section" class="py-5 bg-light">
+<section id="articles-section" class="py-5 my_bg">
   <div class="container">
     <h2 class="text-danger mb-4 text-center">Blood Donation Articles</h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 my-4">
         <div class="card">
           <img src="assets/images/articles/The Importance of Blood Donation.jpg" class="card-img-top" alt="Article 1">
           <div class="card-body">
             <h5 class="card-title">The Importance of Blood Donation</h5>
             <p class="card-text">Discover why donating blood can save lives and support communities in need.</p>
-            <a href="article1.html" class="btn btn-danger">Read More</a>
+            <a href="https://www.who.int/news-room/questions-and-answers/item/blood-products-why-should-i-donate-blood" class="btn btn-danger">Read More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 my-4">
         <div class="card">
           <img src="assets/images/articles/Who Can Donate Blood.jpg" class="card-img-top" alt="Article 2">
           <div class="card-body">
             <h5 class="card-title">Who Can Donate Blood?</h5>
             <p class="card-text">Learn about eligibility requirements and how you can contribute to the cause.</p>
-            <a href="article2.html" class="btn btn-danger">Read More</a>
+            <a href="https://www.who.int/campaigns/world-blood-donor-day/2018/who-can-give-blood#:~:text=Below%20are%20some%20basic%20eligibility,that%20appropriate%20consent%20is%20obtained." class="btn btn-danger">Read More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 my-4">
         <div class="card">
           <img src="assets/images/articles/Preparing for Blood Donation.jpg" class="card-img-top" alt="Article 3">
           <div class="card-body">
             <h5 class="card-title">Preparing for Blood Donation</h5>
             <p class="card-text">Understand how to prepare for a safe and successful blood donation experience.</p>
-            <a href="article3.html" class="btn btn-danger">Read More</a>
+            <a href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html" class="btn btn-danger">Read More</a>
           </div>
         </div>
       </div>
@@ -308,7 +326,7 @@
   <div class="container text-center">
     <h2 class="text-danger mb-4">Meet the Developers</h2>
     <div class="row justify-content-center align-items-center">
-      <div class="col-md-4">
+      <div class="col-md-4 my-4">
         <div class="card text-center">
           <img src="assets/images/developers/borna_bhowmik.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Developer 1" style="width: 200px; height: 200px;">
           <div class="card-body">
@@ -318,7 +336,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 my-4">
         <div class="card text-center">
           <img src="assets/images/developers/yasin_ahmed.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Developer 2" style="width: 200px; height: 200px;">
           <div class="card-body">
