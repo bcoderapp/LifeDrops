@@ -27,6 +27,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#info-section">Information</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#articles-section">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#developers-section">Meet Developers</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -62,7 +68,7 @@
           </select>
         </div>
         <div class="mb-3">
-          <label for="area" class="form-label">Location</label>
+            <label for="area" class="form-label">Location</label>
           <select class="form-select" id="area" name="area" required>
             <option value="" selected>Select Area</option>
             <option value="Dhaka">Dhaka</option>
@@ -230,26 +236,23 @@
         </div>
         <div class="mb-3">
           <label for="contactNo" class="form-label">Contact No</label>
-          <input type="text" class="form-control" id="contactNo" name="contact_no" placeholder="Enter Contact No"
-            required>
+          <input type="text" class="form-control" id="contactNo" name="contact_no" placeholder="Enter Contact No" required>
         </div>
         <div class="mb-3">
           <label for="altContactNo" class="form-label">Alternative Contact No</label>
-          <input type="text" class="form-control" id="altContactNo" name="alt_contact_no"
-            placeholder="Enter Alternative Contact">
+          <input type="text" class="form-control" id="altContactNo" name="alt_contact_no" placeholder="Enter Alternative Contact">
         </div>
         <button type="submit" class="btn btn-danger w-100">Register</button>
       </form>
     </div>
   </section>
-
+  
 
   <!-- Information Section -->
   <section id="info-section" class="py-5">
     <div class="container">
       <h2 class="text-danger mb-4 text-center">Why Donate Blood?</h2>
-      <p>Blood donation is a simple act of humanity that can save lives. Here’s why you should consider donating blood:
-      </p>
+      <p>Blood donation is a simple act of humanity that can save lives. Here’s why you should consider donating blood:</p>
       <ul>
         <li>Every two seconds, someone in need of a transfusion requires blood.</li>
         <li>Your donation can help accident victims, cancer patients, and more.</li>
@@ -257,10 +260,78 @@
       </ul>
       <h4 class="mt-4">FAQs</h4>
       <p><strong>Q: How often can I donate blood?</strong> A: You can donate whole blood every 56 days.</p>
-      <p><strong>Q: Is it safe to donate blood?</strong> A: Yes, the process is completely safe and conducted under
-        medical supervision.</p>
+      <p><strong>Q: Is it safe to donate blood?</strong> A: Yes, the process is completely safe and conducted under medical supervision.</p>
     </div>
   </section>
+
+  <!-- Blood Donation Related Articles Section -->
+<section id="articles-section" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-danger mb-4 text-center">Blood Donation Articles</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/images/articles/The Importance of Blood Donation.jpg" class="card-img-top" alt="Article 1">
+          <div class="card-body">
+            <h5 class="card-title">The Importance of Blood Donation</h5>
+            <p class="card-text">Discover why donating blood can save lives and support communities in need.</p>
+            <a href="article1.html" class="btn btn-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/images/articles/Who Can Donate Blood.jpg" class="card-img-top" alt="Article 2">
+          <div class="card-body">
+            <h5 class="card-title">Who Can Donate Blood?</h5>
+            <p class="card-text">Learn about eligibility requirements and how you can contribute to the cause.</p>
+            <a href="article2.html" class="btn btn-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/images/articles/Preparing for Blood Donation.jpg" class="card-img-top" alt="Article 3">
+          <div class="card-body">
+            <h5 class="card-title">Preparing for Blood Donation</h5>
+            <p class="card-text">Understand how to prepare for a safe and successful blood donation experience.</p>
+            <a href="article3.html" class="btn btn-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Developers Section -->
+<section id="developers-section" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-danger mb-4">Meet the Developers</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="" class="card-img-top rounded-circle mx-auto mt-3" alt="Developer 1" style="width: 200px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Borna Rani Bhowmik</h5>
+            <p class="card-text">Front-End Developer</p>
+            <p class="text-muted">CSE'57, Metropolitan University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="assets/images/developers/yasin_ahmed.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Developer 2" style="width: 200px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Md. Yasin Ahmed Mahi</h5>
+            <p class="card-text">Backend Developer</p>
+            <p class="text-muted">CSE'57, Metropolitan University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-danger text-white py-3">
@@ -271,5 +342,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
